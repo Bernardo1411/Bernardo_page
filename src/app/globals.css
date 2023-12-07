@@ -1,5 +1,8 @@
 :root {
   --background-main-color: linear-gradient(113deg, #222 0%, #3F3F3F 100.75%);
+  --background-navbar-color: linear-gradient(180deg, #222 0%, rgba(34, 34, 34, 0.00) 100%);
+  --text-main-color: linear-gradient(90deg, #8967AB 53.65%, #523CDB 88.49%);
+  --text-secondary-color: linear-gradient(90deg, #8B8B8B 0%, #656565 100%);
 }
 
 * {

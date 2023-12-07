@@ -5,10 +5,10 @@ import Image from 'next/image';
 import styles from './pageContainer.module.css';
 
 function PageContainer(props) {
-  const { children } = props;
+  const { children, id } = props;
 
   return (
-    <div className={styles.container}>
+    <div id={id} className={styles.container}>
       {children}
       <Image
         src="/images/react.svg"
@@ -54,6 +54,7 @@ PageContainer.propTypes = {
     PropTypes.object,
     PropTypes.node,
   ]).isRequired,
+  id: PropTypes.string.isRequired,
 };
 
 export default PageContainer;

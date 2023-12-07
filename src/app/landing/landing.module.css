@@ -1,0 +1,39 @@
+.h1 {
+    color: white;
+    font-size: 64px;
+    font-weight: 400;
+    display: inline;
+}
+
+.personal {
+    background: var(--text-main-color);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.p {
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    background: var(--text-secondary-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bottomButton {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    position: absolute;
+    bottom: 0;
+    left: '50%';
+}
