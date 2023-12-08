@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
 
@@ -7,7 +9,7 @@ import styles from './landing.module.css';
 
 function Landing() {
   return (
-    <PageContainer id="landing">
+    <PageContainer id="">
       <Image
         src="/images/myphoto.webp"
         alt="Bernardo photo"
@@ -24,7 +26,11 @@ function Landing() {
         <h1 className={styles.h1}>Webpage!</h1>
       </div>
       <p className={styles.p}>Build a consistent and reponsive front-end for your business.</p>
-      <div className={styles.bottomButton}>
+      <button
+        className={styles.bottomButton}
+        type="button"
+        onClick={() => { window.location.hash = 'about'; }}
+      >
         <p className={styles.p}>About</p>
         <Image
           src="/images/arrowDown.svg"
@@ -32,7 +38,7 @@ function Landing() {
           height={24}
           width={24}
         />
-      </div>
+      </button>
     </PageContainer>
   );
 }
