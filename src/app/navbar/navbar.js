@@ -1,30 +1,35 @@
-import React from 'react';
+'use client';
 
+import React from 'react';
+import { usePathname } from 'next/navigation';
+import Link from 'next/link';
 import styles from './navbar.module.css';
 
 function Navbar() {
+  const pathname = usePathname();
+
   return (
     <div className={styles.container}>
       <ul className={styles.ul}>
         <li className={styles.li}>
-          <a className={styles.a} href="#landing">
+          <Link className={pathname === '/' ? styles.active : ''} href="/">
             Bernardo
-          </a>
+          </Link>
         </li>
         <li className={styles.li}>
-          <a href="#about">
+          <Link className={pathname === '/about' ? styles.active : ''} href="/about">
             About
-          </a>
+          </Link>
         </li>
         <li className={styles.li}>
-          <a href="#projects">
+          <Link className={pathname === '/projects' ? styles.active : ''} href="/projects">
             Projects
-          </a>
+          </Link>
         </li>
         <li className={styles.li}>
-          <a href="#contact">
+          <Link className={pathname === '/contact' ? styles.active : ''} href="/contact">
             Contact
-          </a>
+          </Link>
         </li>
       </ul>
     </div>

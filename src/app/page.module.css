@@ -6,3 +6,45 @@
   width: 100%;
   min-height: 100vh;
 }
+
+.h1 {
+  color: white;
+  font-size: 3rem;
+  font-weight: 400;
+  display: inline;
+}
+
+.personal {
+  background: var(--text-main-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.bottomButton {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  position: absolute;
+  bottom: 0;
+  left: '50%';
+  z-index: 9;
+  background: none;
+  outline: none;
+  border: none;
+  animation: moveUpDown 2s linear infinite;
+}
+
+@keyframes moveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+ }

@@ -29,8 +29,9 @@
     line-height: normal;
 }
 
-.a:active {
+.active {
     background: var(--text-main-color);
+    background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;

@@ -3,6 +3,9 @@ import { Inter } from 'next/font/google';
 import PropTypes from 'prop-types';
 import './globals.css';
 
+import Background from '../containers/background/background';
+import Navbar from './navbar/navbar';
+
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
@@ -13,7 +16,12 @@ export const metadata = {
 function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Background>
+          <Navbar />
+          {children}
+        </Background>
+      </body>
     </html>
   );
 }
