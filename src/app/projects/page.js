@@ -13,7 +13,7 @@ function Projects() {
   return (
     <Transition>
       <PageContainer>
-        <Title style={{ marginBottom: '30px' }}>Projects</Title>
+        <Title style={{ marginBottom: '30px', marginTop: '20px' }}>Projects</Title>
         <div className={styles.container}>
           <Card
             title="Nerdflix"

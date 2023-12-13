@@ -5,6 +5,7 @@
     justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .div_rows {
@@ -16,16 +17,31 @@
 }
 
 .div_container_text {
-    width: 370px;
+    min-width: 250px;
+    max-width: 450px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
+    padding: 5px 15px 5px 15px;
 }
 
 .p {
     margin-bottom: 10px;
     font-size: 1rem;
+    text-align: justify;
+    position: relative;
+    z-index: 8;
+}
+
+.p_option:hover {
+    background: var(--text-title_color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
 
 .div_images {
@@ -36,4 +52,5 @@
     align-items: flex-start;
     flex-wrap: wrap;
     margin-top: 20px;
+    margin-bottom: 20px;
 }

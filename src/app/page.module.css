@@ -7,20 +7,47 @@
   min-height: 100vh;
 }
 
+.div_highlighted{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-left: 50px;
+  transition: all 0.5s linear;
+}
+.divMainText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .h1 {
   color: white;
   font-size: 3rem;
   font-weight: 400;
   display: inline;
+  transition: all 0.5s linear;
 }
 
 .personal {
   background: var(--text-main-color);
+  background-size: 200% 200%;
     background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    animation: shimmer 3s infinite linear;
+}
+
+@keyframes shimmer {
+  to {
+    background-position: 200% 200%;
+  }
 }
 
 .bottomButton {
@@ -48,3 +75,14 @@
     transform: translateY(-10px);
   }
  }
+
+ @media (max-width: 768px) {
+  .div_highlighted {
+    align-items: center;
+    padding: 0;
+  }
+
+  .h1 {
+    font-size: 1.5rem;
+  }
+}

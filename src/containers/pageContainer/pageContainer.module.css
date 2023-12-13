@@ -7,4 +7,11 @@
     align-items: center;
     position: relative;
     padding-top: 98px;
+    transition: all 0.5s linear;
 }
+
+@media (max-width: 768px) {
+    .container {
+        padding-top: 50px;
+    }
+  }

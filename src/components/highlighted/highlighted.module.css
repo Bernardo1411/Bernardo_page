@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 310px;
+    height: 85px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    /* position: absolute;
+    left: 50px;
+    top: 100px; */
+    transition: all 0.5s linear;
+    
+    background: var(--text-title_color);
+}
+
+.p {
+    color: #222;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    transition: all 0.5s linear;
+}
+
+@media (max-width: 768px) {
+    .container {
+      width: 290px;
+      height: 50px;
+    }
+  
+    .p {
+      font-size: 1rem;
+    }
+  }

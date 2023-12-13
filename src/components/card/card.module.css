@@ -34,6 +34,13 @@
     opacity: 1;
 }
 
+.div_image {
+    width: 210px;
+    height: 230px;
+    position: relative;
+    margin-right: 5px;
+}
+
 .card_right {
     height: 231px;
     display: flex;
@@ -51,4 +58,17 @@
 .hyperLink {
     text-decoration: underline;
     font-size: 0.6rem;
+}
+
+@media (max-width: 450px) {
+    .card_container {
+        padding: 10px;
+    }
+
+    .div_image {
+        width: 180px;
+    }
+    .p {
+        font-size: 0.8rem;
+  }
 }

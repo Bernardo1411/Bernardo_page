@@ -28,7 +28,9 @@ function Card(props) {
   return (
     <CleanButton onClick={() => window.open(`https://github.com/Bernardo1411/${link}/blob/master/README.md`)}>
       <div className={styles.card_container} style={style} onMouseMove={(e) => handleMouseMove(e)}>
-        <Image width={210} height={230} src={`/images/${image}.webp`} />
+        <div className={styles.div_image}>
+          <Image layout="fill" objectFit="cover" src={`/images/${image}.webp`} style={{ borderRadius: '10px' }} />
+        </div>
         <div className={styles.card_right}>
           <Title style={{ fontSize: '1.2rem' }}>{title}</Title>
           <p className={styles.p}>
