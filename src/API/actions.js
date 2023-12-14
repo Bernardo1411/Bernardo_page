@@ -2,6 +2,8 @@
 
 import nodemailer from 'nodemailer';
 
+const { USER_EMAIL, USER_PASSWORD } = process.env;
+
 export default async function sendEmail(formData) {
   const email = formData.get('email');
   const title = formData.get('title');
@@ -12,14 +14,14 @@ export default async function sendEmail(formData) {
     secure: false,
     port: 587,
     auth: {
-      user: 'bernardo1411@hotmail.com',
-      pass: 'dcyrvevqiovaudxy',
+      user: USER_EMAIL,
+      pass: USER_PASSWORD,
     },
   });
 
   const mailOptions = {
-    from: 'bernardo1411@hotmail.com',
-    to: 'bernardo1411@hotmail.com',
+    from: USER_EMAIL,
+    to: USER_EMAIL,
     replyTo: email,
     subject: title,
     text: message,
