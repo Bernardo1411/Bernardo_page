@@ -11,7 +11,7 @@ import styles from './card.module.css';
 
 function Card(props) {
   const {
-    title, image, techs, description, link, style,
+    title, image, techs, description, link, style = {},
   } = props;
 
   const handleMouseMove = (e) => {
@@ -29,7 +29,13 @@ function Card(props) {
     <CleanButton onClick={() => window.open(`https://github.com/Bernardo1411/${link}/blob/master/README.md`)}>
       <div className={styles.card_container} style={style} onMouseMove={(e) => handleMouseMove(e)}>
         <div className={styles.div_image}>
-          <Image layout="fill" objectFit="cover" src={`/images/${image}.webp`} style={{ borderRadius: '10px' }} />
+          <Image
+            fill
+            src={`/images/${image}.webp`}
+            style={{ borderRadius: '10px' }}
+            alt={image}
+            sizes="210px"
+          />
         </div>
         <div className={styles.card_right}>
           <Title style={{ fontSize: '1.2rem' }}>{title}</Title>
@@ -40,7 +46,7 @@ function Card(props) {
             See more...
           </p>
           <div>
-            {techs && techs.length > 0 && techs.map((tech) => <Image width={26} height={26} key={tech} style={{ marginRight: '11px' }} src={`/images/${tech}.svg`} />)}
+            {techs && techs.length > 0 && techs.map((tech) => <Image width={26} height={26} key={tech} style={{ marginRight: '11px' }} src={`/images/${tech}.svg`} alt={tech} />)}
           </div>
         </div>
       </div>
@@ -48,17 +54,13 @@ function Card(props) {
   );
 }
 
-Card.defaultProps = {
-  style: {},
-};
-
 Card.propTypes = {
   title: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
-  techs: PropTypes.shape([]).isRequired,
+  techs: PropTypes.arrayOf(PropTypes.string).isRequired,
   description: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
-  style: PropTypes.shape,
+  style: PropTypes.shape({}),
 };
 
 export default Card;

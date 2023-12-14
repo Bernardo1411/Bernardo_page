@@ -7,13 +7,13 @@ import Transition from '../../containers/Transition/Transition';
 import Title from '../../components/title/title';
 import Card from '../../components/card/card';
 
-import styles from './projects.module.css';
+import styles from './portfolio.module.css';
 
-function Projects() {
+function Portfolio() {
   return (
     <Transition>
       <PageContainer>
-        <Title style={{ marginBottom: '30px', marginTop: '20px' }}>Projects</Title>
+        <Title style={{ marginBottom: '30px', marginTop: '20px' }}>Portfolio</Title>
         <div className={styles.container}>
           <Card
             title="Nerdflix"
@@ -49,4 +49,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default Portfolio;

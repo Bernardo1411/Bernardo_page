@@ -24,5 +24,11 @@ module.exports = {
     // when updating the state while using immer
     // under the hood in redux toolkit
     'no-param-reassign': ['error', { props: true, ignorePropertyModificationsFor: ['state'] }],
+
+    // Remove rule from deafultProps as it will be deprecated in the future
+    'react/require-default-props': ['error', {
+      forbidDefaultForRequired: true,
+      ignoreFunctionalComponents: true,
+    }],
   },
 };

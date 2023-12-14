@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
 function ChangeOnHover(props) {
-  const { firstElement, secondElement, style } = props;
+  const { firstElement, secondElement, style = {} } = props;
 
   const [isHovering, setIsHovered] = useState(false);
   const onMouseEnter = () => setIsHovered(true);
@@ -24,10 +24,6 @@ function ChangeOnHover(props) {
     </div>
   );
 }
-
-ChangeOnHover.defaultProps = {
-  style: {},
-};
 
 ChangeOnHover.propTypes = {
   firstElement: PropTypes.oneOfType([

@@ -42,8 +42,8 @@ function Navbar() {
           </Link>
         </li>
         <li className={styles.li}>
-          <Link className={pathname === '/projects' ? styles.active : ''} href="/projects">
-            Projects
+          <Link className={pathname === '/portfolio' ? styles.active : ''} href="/portfolio">
+            Portfolio
           </Link>
         </li>
         <li className={styles.li}>

@@ -6,6 +6,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 
 .div_form {
@@ -25,7 +26,11 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    z-index: 8;
+    z-index: 2;
+}
+
+.p_send_message {
+    margin-bottom: 20px
 }
 
 .input {
@@ -55,8 +60,8 @@
 .div_social {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     margin-bottom: 10px;
 }
 
@@ -65,5 +70,16 @@
 }
 
 .textarea {
-    height: 300px;
+    height: 250px;
+}
+
+@media (max-width: 750px) {
+    .container {
+        flex-direction: column;
+        margin-bottom: 80px;
+    }
+
+    .p_send_message {
+        margin-top: 40px;
+    }
 }

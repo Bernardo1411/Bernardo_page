@@ -12,6 +12,7 @@
     cursor: pointer;
     position: relative;
     transition: transform 0.3s ease-out;
+    z-index: 2;
 }
 
 .card_container:hover{
@@ -63,12 +64,20 @@
 @media (max-width: 450px) {
     .card_container {
         padding: 10px;
+        flex-direction: column;
     }
 
     .div_image {
-        width: 180px;
+        width: 100%;
+        margin-bottom: 10px;
     }
+
+    .card_right {
+        width: 100%;
+    }
+
     .p {
         font-size: 0.8rem;
+        max-width: 80%;
   }
 }

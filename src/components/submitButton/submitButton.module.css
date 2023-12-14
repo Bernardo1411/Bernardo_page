@@ -10,7 +10,6 @@
     border-radius: 10px;
     border: none;
     transition: opacity 500ms;
-    z-index: 8;
 }
 
 .button:active {

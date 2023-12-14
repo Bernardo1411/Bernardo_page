@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import styles from './title.module.css';
 
 function Title(props) {
-  const { children, style } = props;
+  const { children, style = {} } = props;
 
   return (
     <h2 className={styles.h2} style={style}>
@@ -12,10 +12,6 @@ function Title(props) {
     </h2>
   );
 }
-
-Title.defaultProps = {
-  style: {},
-};
 
 Title.propTypes = {
   children: PropTypes.oneOfType([

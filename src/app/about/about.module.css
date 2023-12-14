@@ -32,7 +32,7 @@
     font-size: 1rem;
     text-align: justify;
     position: relative;
-    z-index: 8;
+    z-index: 2;
 }
 
 .p_option:hover {
@@ -54,3 +54,9 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+@media (max-width: 1150px) {
+    .div_container_rows {
+      margin-bottom: 80px;
+    }
+  }
