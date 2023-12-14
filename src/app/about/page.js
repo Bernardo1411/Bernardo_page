@@ -68,8 +68,8 @@ function About() {
                   marginRight: '35px',
                   marginBottom: '20px',
                 }}
-                firstElement={<Image width={75} height={75} style={{ marginRight: '35px', marginBottom: '20px' }} src="/images/react_mini.svg" />}
-                secondElement={<Image width={75} height={75} style={{ marginRight: '35px', marginBottom: '20px' }} src="/images/react_mini_color.svg" />}
+                firstElement={<Image width={75} height={75} style={{ marginRight: '35px', marginBottom: '20px' }} src="/images/react_mini.svg" alt="react" />}
+                secondElement={<Image width={75} height={75} style={{ marginRight: '35px', marginBottom: '20px' }} src="/images/react_mini_color.svg" alt="react" />}
               />
               <ChangeOnHover
                 style={{
@@ -77,8 +77,8 @@ function About() {
                   height: '75px',
                   marginBottom: '20px',
                 }}
-                firstElement={<Image width={75} height={75} src="/images/css3.svg" />}
-                secondElement={<Image width={75} height={75} src="/images/css3_color.svg" />}
+                firstElement={<Image width={75} height={75} src="/images/css3.svg" alt="css3" />}
+                secondElement={<Image width={75} height={75} src="/images/css3_color.svg" alt="css3" />}
               />
               <ChangeOnHover
                 style={{
@@ -87,8 +87,8 @@ function About() {
                   marginRight: '35px',
                   marginBottom: '20px',
                 }}
-                firstElement={<Image width={75} height={75} src="/images/javascript.svg" />}
-                secondElement={<Image width={75} height={75} src="/images/javascript_color.svg" />}
+                firstElement={<Image width={75} height={75} src="/images/javascript.svg" alt="javascript" />}
+                secondElement={<Image width={75} height={75} src="/images/javascript_color.svg" alt="javascript" />}
               />
               <ChangeOnHover
                 style={{
@@ -96,8 +96,8 @@ function About() {
                   height: '75px',
                   marginBottom: '20px',
                 }}
-                firstElement={<Image width={75} height={75} src="/images/mongodb.svg" />}
-                secondElement={<Image width={75} height={75} src="/images/mongodb_color.svg" />}
+                firstElement={<Image width={75} height={75} src="/images/mongodb.svg" alt="mongoDB" />}
+                secondElement={<Image width={75} height={75} src="/images/mongodb_color.svg" alt="mongoDB" />}
               />
               <ChangeOnHover
                 style={{
@@ -105,16 +105,16 @@ function About() {
                   height: '75px',
                   marginRight: '35px',
                 }}
-                firstElement={<Image width={75} height={75} src="/images/node.svg" />}
-                secondElement={<Image width={75} height={75} src="/images/node_color.svg" />}
+                firstElement={<Image width={75} height={75} src="/images/node.svg" alt="node.js" />}
+                secondElement={<Image width={75} height={75} src="/images/node_color.svg" alt="node.js" />}
               />
               <ChangeOnHover
                 style={{
                   width: '75px',
                   height: '75px',
                 }}
-                firstElement={<Image width={75} height={75} src="/images/html5.svg" />}
-                secondElement={<Image width={75} height={75} src="/images/html5_color.svg" />}
+                firstElement={<Image width={75} height={75} src="/images/html5.svg" alt="html5" />}
+                secondElement={<Image width={75} height={75} src="/images/html5_color.svg" alt="html5" />}
               />
             </div>
           </div>
