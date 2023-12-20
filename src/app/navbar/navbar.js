@@ -25,7 +25,7 @@ function Navbar() {
 
   return (
     <div className={`${styles.container} ${isMenuOpen ? styles.menuOpen : ''}`}>
-      <CleanButton onClick={toggleMenu}>
+      <CleanButton onClick={toggleMenu} name="toggle_nav">
         <div className={styles.toggleButton}>
           ☰
         </div>

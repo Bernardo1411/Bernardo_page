@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 function CleanButton(props) {
   const {
-    children, onClick,
+    children, onClick, name,
   } = props;
 
   const buttonComponent = (
@@ -20,6 +20,7 @@ function CleanButton(props) {
         justifyContent: 'center',
         alignItems: 'center',
       }}
+      aria-label={name}
     >
       {children}
     </button>
@@ -35,6 +36,7 @@ CleanButton.propTypes = {
     PropTypes.node,
   ]).isRequired,
   onClick: PropTypes.func.isRequired,
+  name: PropTypes.string.isRequired,
 };
 
 export default CleanButton;

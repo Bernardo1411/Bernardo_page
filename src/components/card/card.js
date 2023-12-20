@@ -26,7 +26,7 @@ function Card(props) {
   };
 
   return (
-    <CleanButton onClick={() => window.open(`https://github.com/Bernardo1411/${link}/blob/master/README.md`)}>
+    <CleanButton onClick={() => window.open(`https://github.com/Bernardo1411/${link}/blob/master/README.md`)} name={link}>
       <div className={styles.card_container} style={style} onMouseMove={(e) => handleMouseMove(e)}>
         <div className={styles.div_image}>
           <Image

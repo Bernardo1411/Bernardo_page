@@ -48,14 +48,14 @@ function Contact() {
             <p style={{ marginBottom: '26px' }}>Check my curriculum</p>
             <div style={{ display: 'flex', flexDirection: 'row', marginBottom: '70px' }}>
               <div className={styles.div_image} style={{ marginRight: '50px' }}>
-                <CleanButton onClick={() => window.open('https://drive.google.com/file/d/10nNS-o9UYAv56SBgOjfOSUYdifCp9kmL/view?usp=sharing')}>
+                <CleanButton onClick={() => window.open('https://drive.google.com/file/d/10nNS-o9UYAv56SBgOjfOSUYdifCp9kmL/view?usp=sharing')} name="download_file_english">
                   <Image src="/images/download_file.svg" width={100} height={100} style={{ cursor: 'pointer' }} alt="curriculum english" />
                 </CleanButton>
                 <p>English</p>
               </div>
               <div className={styles.div_image}>
                 <CleanButton onClick={() => window.open('https://drive.google.com/file/d/1HCLfz6gAf27u5g-w1WZkwS4pNArjpNPC/view?usp=sharing')}>
-                  <Image src="/images/download_file.svg" width={100} height={100} style={{ cursor: 'pointer' }} alt="curriculum portuguese" />
+                  <Image src="/images/download_file.svg" width={100} height={100} style={{ cursor: 'pointer' }} alt="curriculum portuguese" name="download_file_portuguese" />
                 </CleanButton>
                 <p>Portuguese</p>
               </div>

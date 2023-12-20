@@ -16,11 +16,11 @@ function Portfolio() {
         <Title style={{ marginBottom: '30px', marginTop: '20px' }}>Portfolio</Title>
         <div className={styles.container}>
           <Card
-            title="Nerdflix"
-            image="nerdflix"
-            link="Nerdflix"
-            techs={['react_mini', 'CSS3', 'HTML5', 'firebase']}
-            description="Nerdflix is an web app that simulates an online movie store. You can browse a movie and add to your cart."
+            title="EQBEA"
+            image="eqbea"
+            link="EQBEA"
+            techs={['react_mini', 'node', 'mongoose', 'mongoDB']}
+            description="Mobile application for animal welfare management and diagnosis prediction."
           />
           <Card
             title="Nerdflix"
@@ -30,11 +30,11 @@ function Portfolio() {
             description="Nerdflix is an web app that simulates an online movie store. You can browse a movie and add to your cart."
           />
           <Card
-            title="Nerdflix"
-            image="nerdflix"
-            link="Nerdflix"
-            techs={['react_mini', 'CSS3', 'HTML5', 'firebase']}
-            description="Nerdflix is an web app that simulates an online movie store. You can browse a movie and add to your cart."
+            title="Wallet"
+            image="wallet"
+            link="Wallet"
+            techs={['react_mini', 'CSS3', 'HTML5', 'javascript']}
+            description="One of my first projects. It is a digital wallet that calculates and converts any expense in any currency into reais."
           />
           <Card
             title="Nerdflix"

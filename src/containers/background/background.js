@@ -29,7 +29,7 @@ function Background(props) {
       <footer className={styles.footer}>
         <ChangeOnHover
           firstElement={(
-            <CleanButton onClick={() => window.open('https://github.com/Bernardo1411')}>
+            <CleanButton onClick={() => window.open('https://github.com/Bernardo1411')} name="github">
               <Image
                 className="upDown"
                 src="/images/github.svg"
@@ -45,7 +45,7 @@ function Background(props) {
             </CleanButton>
           )}
           secondElement={(
-            <CleanButton onClick={() => window.open('https://github.com/Bernardo1411')}>
+            <CleanButton onClick={() => window.open('https://github.com/Bernardo1411')} name="github_color">
               <Image
                 className="upDown"
                 src="/images/github_color.svg"
@@ -63,7 +63,7 @@ function Background(props) {
         />
         <ChangeOnHover
           firstElement={(
-            <CleanButton onClick={() => window.open('https://www.linkedin.com/in/bernardo-fonseca-97926811b/')}>
+            <CleanButton onClick={() => window.open('https://www.linkedin.com/in/bernardo-fonseca-97926811b/')} name="linkedin">
               <Image
                 className={`${styles.linkedin} upDown`}
                 src="/images/linkedin.svg"
@@ -77,7 +77,7 @@ function Background(props) {
             </CleanButton>
           )}
           secondElement={(
-            <CleanButton onClick={() => window.open('https://www.linkedin.com/in/bernardo-fonseca-97926811b/')}>
+            <CleanButton onClick={() => window.open('https://www.linkedin.com/in/bernardo-fonseca-97926811b/')} name="linkedin_color">
               <Image
                 className={`${styles.linkedin} upDown`}
                 src="/images/linkedin_color.svg"

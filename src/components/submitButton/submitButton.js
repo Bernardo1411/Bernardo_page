@@ -13,6 +13,7 @@ function SubmitButton() {
       className={styles.button}
       type="submit"
       aria-disabled={pending}
+      aria-label="submit"
     >
       Submit
     </button>
