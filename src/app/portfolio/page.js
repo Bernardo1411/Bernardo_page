@@ -42,7 +42,7 @@ function Portfolio() {
             link="Hash-Game"
             techs={['react_mini', 'CSS3', 'HTML5', 'javascript']}
             description="
-            Excited to present my first React project: a tic-tac-toe game where you can challenge yourself by playing against the computer. Enjoy the challenge!"
+            My first React project: a tic-tac-toe game where you can challenge yourself by playing against the computer. Enjoy the challenge!"
           />
         </div>
       </PageContainer>
