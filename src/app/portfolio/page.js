@@ -37,11 +37,12 @@ function Portfolio() {
             description="One of my first projects. It is a digital wallet that calculates and converts any expense in any currency into reais."
           />
           <Card
-            title="Nerdflix"
-            image="nerdflix"
-            link="Nerdflix"
-            techs={['react_mini', 'CSS3', 'HTML5', 'firebase']}
-            description="Nerdflix is an web app that simulates an online movie store. You can browse a movie and add to your cart."
+            title="Hash Game"
+            image="hashgame"
+            link="Hash-Game"
+            techs={['react_mini', 'CSS3', 'HTML5', 'javascript']}
+            description="
+            Excited to present my first React project: a tic-tac-toe game where you can challenge yourself by playing against the computer. Enjoy the challenge!"
           />
         </div>
       </PageContainer>
