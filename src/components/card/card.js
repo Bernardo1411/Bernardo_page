@@ -51,8 +51,8 @@ function Card(props) {
           <div>
             {techs && techs.length > 0 && techs.map((tech) => (
               <Image
-                width={30}
-                height={30}
+                width={50}
+                height={50}
                 key={tech}
                 style={{ marginRight: '11px' }}
                 src={`/images/${tech}.svg`}
