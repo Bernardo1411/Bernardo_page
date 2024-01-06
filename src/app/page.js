@@ -20,7 +20,8 @@ function Landing() {
           alt="Bernardo photo"
           height={250}
           width={250}
-          style={{ marginBottom: '10px' }}
+          priority
+          style={{ marginBottom: '10px', borderRadius: '100%' }}
         />
         <div className={styles.divMainText}>
           <div>
@@ -31,7 +32,7 @@ function Landing() {
             <h1 className={styles.h1}>Webpage!</h1>
           </div>
         </div>
-        <p>Build a consistent and reponsive front-end for your business.</p>
+        <p style={{ marginBottom: '60px' }}>Build a consistent and reponsive front-end for your business.</p>
       </PageContainer>
     </Transition>
   );

@@ -32,9 +32,12 @@ function Card(props) {
           <Image
             fill
             src={`/images/${image}.webp`}
-            style={{ borderRadius: '10px' }}
+            style={{ borderRadius: '10px', objectFit: 'cover' }}
             alt={image}
             sizes="210px"
+            priority
+            placeholder="blur"
+            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAVSURBVHgBY+zu7v7PAAVMDEgAhQMAX74CpgpXNjAAAAAASUVORK5CYII="
           />
         </div>
         <div className={styles.card_right}>
@@ -46,7 +49,16 @@ function Card(props) {
             See more...
           </p>
           <div>
-            {techs && techs.length > 0 && techs.map((tech) => <Image width={26} height={26} key={tech} style={{ marginRight: '11px' }} src={`/images/${tech}.svg`} alt={tech} />)}
+            {techs && techs.length > 0 && techs.map((tech) => (
+              <Image
+                width={26}
+                height={26}
+                key={tech}
+                style={{ marginRight: '11px' }}
+                src={`/images/${tech}.svg`}
+                alt={tech}
+              />
+            ))}
           </div>
         </div>
       </div>

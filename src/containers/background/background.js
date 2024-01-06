@@ -23,6 +23,7 @@ function Background(props) {
           bottom: 0,
           right: 0,
         }}
+        priority
         height={300}
         width={330}
       />
@@ -46,18 +47,25 @@ function Background(props) {
           )}
           secondElement={(
             <CleanButton onClick={() => window.open('https://github.com/Bernardo1411')} name="github_color">
-              <Image
+              <div
                 className="upDown"
-                src="/images/github_color.svg"
-                alt="github"
                 style={{
+                  backgroundColor: 'white',
+                  height: 50,
+                  width: 50,
+                  borderRadius: '100%',
                   marginLeft: '27px',
                   marginRight: '13px',
                   marginBottom: '24px',
                 }}
-                height={50}
-                width={50}
-              />
+              >
+                <Image
+                  src="/images/github_color.svg"
+                  alt="github"
+                  height={50}
+                  width={50}
+                />
+              </div>
             </CleanButton>
           )}
         />

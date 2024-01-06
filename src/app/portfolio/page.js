@@ -16,6 +16,13 @@ function Portfolio() {
         <Title style={{ marginBottom: '30px', marginTop: '20px' }}>Portfolio</Title>
         <div className={styles.container}>
           <Card
+            title="Flowers"
+            image="flowersdashboard"
+            link="flowersdashboard"
+            techs={['react_mini', 'node', 'mongoose', 'mongoDB']}
+            description="This web aplication is a dashboard to flower stock control."
+          />
+          <Card
             title="EQBEA"
             image="eqbea"
             link="EQBEA"

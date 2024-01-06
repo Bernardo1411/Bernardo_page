@@ -1,8 +1,9 @@
 'use client';
 
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import Image from 'next/image';
 import { toast } from 'react-toastify';
+import RingLoader from 'react-spinners/RingLoader';
 
 import PageContainer from '../../containers/pageContainer/pageContainer';
 import SubmitButton from '../../components/submitButton/submitButton';
@@ -15,9 +16,12 @@ import Toast from '../../components/toastfy/toastfy';
 import styles from './contact.module.css';
 
 function Contact() {
+  const [isLoading, setIsLoading] = useState(false);
   const formRef = useRef();
 
-  const handleSubmit = async () => {
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    setIsLoading(true);
     const formData = new FormData(formRef.current);
 
     const result = await sendEmail(formData);
@@ -29,12 +33,16 @@ function Contact() {
         hideProgressBar: true,
       });
       formRef.current.reset();
+
+      setIsLoading(false);
     } else {
       toast.error('Error sending email!', {
         position: toast.POSITION.TOP_RIGHT,
         autoClose: 4000,
         hideProgressBar: true,
       });
+
+      setIsLoading(false);
     }
   };
 
@@ -54,8 +62,8 @@ function Contact() {
                 <p>English</p>
               </div>
               <div className={styles.div_image}>
-                <CleanButton onClick={() => window.open('https://drive.google.com/file/d/1HCLfz6gAf27u5g-w1WZkwS4pNArjpNPC/view?usp=sharing')}>
-                  <Image src="/images/download_file.svg" width={100} height={100} style={{ cursor: 'pointer' }} alt="curriculum portuguese" name="download_file_portuguese" />
+                <CleanButton onClick={() => window.open('https://drive.google.com/file/d/1HCLfz6gAf27u5g-w1WZkwS4pNArjpNPC/view?usp=sharing')} name="download_file_portuguese">
+                  <Image src="/images/download_file.svg" width={100} height={100} style={{ cursor: 'pointer' }} alt="curriculum portuguese" />
                 </CleanButton>
                 <p>Portuguese</p>
               </div>
@@ -77,7 +85,19 @@ function Contact() {
           </div>
           <div className={styles.div_form}>
             <p className={styles.p_send_message}>Send me a message</p>
-            <form ref={formRef} action={handleSubmit} className={styles.form}>
+            <form ref={formRef} onSubmit={handleSubmit} className={styles.form}>
+              <RingLoader
+                color="#6B4FC6"
+                loading={isLoading}
+                cssOverride={{
+                  position: 'absolute',
+                  zIndex: 5,
+                  top: '25%',
+                }}
+                size={200}
+                aria-label="Loading Spinner"
+                data-testid="loader"
+              />
               <input className={styles.input} type="email" name="email" placeholder="E-mail" required maxLength="100" />
               <input className={styles.input} type="text" name="title" placeholder="Title" required maxLength="100" />
               <textarea className={`${styles.input} ${styles.textarea}`} type="text" name="message" placeholder="Insert message..." required maxLength="8000" />
