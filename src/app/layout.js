@@ -31,12 +31,14 @@ export const metadata = {
 function RootLayout({ children }) {
   return (
     <html lang="en">
-      {/* <head>
-        <meta property="og:image" content="/public/images/meta_image.png" />
+      <head>
         <meta property="og:image:type" content="website" />
-        <meta property="og:image:width" content="500" />
+        <meta property="og:image:url" content="/public/images/meta_image.png" />
+        <meta property="og:image:secure_url" content="/public/images/meta_image.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="300" />
         <meta property="og:image:height" content="300" />
-      </head> */}
+      </head>
       <body className={inter.className} suppressHydrationWarning>
         <Background>
           <Navbar />
