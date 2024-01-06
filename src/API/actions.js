@@ -24,7 +24,9 @@ export default async function sendEmail(formData) {
     to: USER_EMAIL,
     replyTo: email,
     subject: title,
-    text: message,
+    text: `${email}:
+    
+    ${message}`,
   };
 
   try {
