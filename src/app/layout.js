@@ -15,13 +15,13 @@ export const metadata = {
   openGraph: {
     title: 'Bernardo',
     description: 'Wellcome to my professional website!',
-    // url: 'https://nextjs.org',
+    url: 'https://bernardodev-bernardo1411.vercel.app/',
     siteName: 'Bernardo website',
     images: [
       {
         url: '/public/meta_image.png',
         width: 800,
-        height: 600,
+        height: 500,
       },
     ],
     type: 'website',
@@ -31,6 +31,12 @@ export const metadata = {
 function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <meta property="og:image" content="/public/meta_image.png" />
+        <meta property="og:image:type" content="website" />
+        <meta property="og:image:width" content="800" />
+        <meta property="og:image:height" content="500" />
+      </head>
       <body className={inter.className} suppressHydrationWarning>
         <Background>
           <Navbar />
