@@ -20,7 +20,7 @@ export const metadata = {
     images: [
       {
         url: '/public/images/fav.png',
-        width: 500,
+        width: 300,
         height: 300,
       },
     ],
