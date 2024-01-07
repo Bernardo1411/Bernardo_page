@@ -19,7 +19,7 @@ export const metadata = {
     siteName: 'Bernardo website',
     images: [
       {
-        url: '/images/meta_image.png',
+        url: '/images/opengraph_image.png',
         width: 300,
         height: 300,
       },
@@ -32,8 +32,8 @@ function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <meta property="og:image:url" content="/images/meta_image.png" />
-        <meta property="og:image:secure_url" content="/images/meta_image.png" />
+        <meta property="og:image:url" content="/images/opengraph_image.png" />
+        <meta property="og:image:secure_url" content="/images/opengraph_image.png" />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="300" />
         <meta property="og:image:height" content="300" />
