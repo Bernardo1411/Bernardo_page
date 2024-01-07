@@ -19,12 +19,12 @@ export const metadata = {
     siteName: 'Bernardo website',
     // images: [
     //   {
-    //     url: '/images/opengraph_image.png',
+    //     url: 'https://bernardodev-bernardo1411.vercel.app/images/opengraph_image.png',
     //     width: 300,
     //     height: 300,
     //   },
     // ],
-    // type: 'website',
+    type: 'website',
   },
 };
 
@@ -32,13 +32,13 @@ function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <meta property="og:image:url" content="/images/opengraph_image.png" />
-        <meta property="og:image:secure_url" content="/images/opengraph_image.png" />
+        <meta property="og:image:url" content="https://bernardodev-bernardo1411.vercel.app/images/opengraph_image.png" />
+        <meta property="og:image:secure_url" content="https://bernardodev-bernardo1411.vercel.app/images/opengraph_image.png" />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="300" />
         <meta property="og:image:height" content="300" />
         <meta property="og:image:alt" content="opengraph image" />
-        <meta itemProp="image" content="/images/opengraph_image.png" />
+        <meta itemProp="image" content="https://bernardodev-bernardo1411.vercel.app/images/opengraph_image.png" />
       </head>
       <body className={inter.className} suppressHydrationWarning>
         <Background>
