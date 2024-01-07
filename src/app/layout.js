@@ -17,14 +17,14 @@ export const metadata = {
     description: 'Wellcome to my professional website!',
     url: 'https://bernardodev-bernardo1411.vercel.app/',
     siteName: 'Bernardo website',
-    images: [
-      {
-        url: '/images/opengraph_image.png',
-        width: 300,
-        height: 300,
-      },
-    ],
-    type: 'website',
+    // images: [
+    //   {
+    //     url: '/images/opengraph_image.png',
+    //     width: 300,
+    //     height: 300,
+    //   },
+    // ],
+    // type: 'website',
   },
 };
 
@@ -37,6 +37,8 @@ function RootLayout({ children }) {
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="300" />
         <meta property="og:image:height" content="300" />
+        <meta property="og:image:alt" content="opengraph image" />
+        <meta itemProp="image" content="/images/opengraph_image.png" />
       </head>
       <body className={inter.className} suppressHydrationWarning>
         <Background>
