@@ -16,11 +16,11 @@ function Portfolio() {
         <Title style={{ marginBottom: '30px', marginTop: '20px' }}>Portfolio</Title>
         <div className={styles.container}>
           <Card
-            title="Flowers"
-            image="flowersdashboard"
-            link="flowersdashboard"
-            techs={['react_mini', 'node', 'mongoose', 'mongodb']}
-            description="This web aplication is a dashboard to flower stock control."
+            title="My Webpage"
+            image="mywebpage_mobile"
+            link="Bernardo_page"
+            techs={['next', 'javascript', 'html5', 'css3']}
+            description="Welcome to my professional web page! Explore my portfolio, discover my skills, and get in touch."
           />
           <Card
             title="EQBEA"
@@ -28,6 +28,13 @@ function Portfolio() {
             link="EQBEA"
             techs={['react_mini', 'node', 'mongoose', 'mongodb']}
             description="Mobile application for animal welfare management and diagnosis prediction."
+          />
+          <Card
+            title="Flowers"
+            image="flowersdashboard"
+            link="flowersdashboard"
+            techs={['react_mini', 'node', 'mongoose', 'mongodb']}
+            description="This web aplication is a dashboard to flower stock control."
           />
           <Card
             title="Nerdflix"
