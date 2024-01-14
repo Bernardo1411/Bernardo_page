@@ -4,5 +4,27 @@
         "title2": "pessoal.",
         "title3": "Seja bem-vindo.",
         "description": "Crie um front-end consistente e responsivo para o seu negócio."
-      }
+      },
+      "Navbar": {
+        "about": "Sobre",
+        "portfolio": "Portfólio",
+        "contact": "Contato"
+    },
+    "About": {
+        "aboutMeTile": "Sobre mim",
+        "aboutMe1": "Meu nome é Bernardo Fonseca e sou um desenvolvedor de software localizado em Natal, RN, Brasil. Sou especialista na criação de aplicativos móveis e web de última geração usando React.js e React Native. Além disso, trago expertise em desenvolvimento backend através de Node.js e Express.",
+        "aboutMe2": "Estou entusiasmado com a perspectiva de contribuir para o sucesso do seu projeto. Quer você tenha um projeto já em produção ou esteja nos estágios iniciais de planejamento, estou pronto para colocar minhas habilidades em prática.",
+        "degree": "Graduação",
+        "degree1": "Graduado em Engenharia Química pela Universidade Federal do Rio Grande do Norte",
+        "degree2": "Mestrado em Ciência e Engenharia do Petróleo pela Universidade Federal do Rio Grande do Norte",
+        "experience": "Experiência",
+        "experience1": "Desenvolvedor Full Stack no Centro de Inovação Edge",
+        "experience2": "Desenvolvedor web e mobile na empresa Extraconomy",
+        "experience3": "Desenvolvedor front-end no Laboratório de Automação em Petróleo (LAUT)"
+        ,
+        "technologies": "Tecnologias"
+    },
+    "Portfolio": {
+        "title": "Portfólio"
+    }
   }

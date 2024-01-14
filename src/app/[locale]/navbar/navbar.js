@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 // import { usePathname } from 'next/navigation';
 // import Link from 'next/link';
 import PropTypes from 'prop-types';
+import { useTranslations } from 'next-intl';
 import styles from './navbar.module.css';
 
 import { Link, usePathname } from '../../../../navigation'; // Next intl Link and pathname
@@ -12,6 +13,7 @@ import CleanButton from '../../../components/cleanButton/CleanButton';
 
 function Navbar(props) {
   const { locale } = props;
+  const translation = useTranslations('Navbar');
 
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -43,17 +45,17 @@ function Navbar(props) {
         </li>
         <li className={styles.li}>
           <Link className={pathname === '/about' ? styles.active : ''} href="/about" locale={locale}>
-            About
+            {translation('about')}
           </Link>
         </li>
         <li className={styles.li}>
           <Link className={pathname === '/portfolio' ? styles.active : ''} href="/portfolio" locale={locale}>
-            Portfolio
+            {translation('portfolio')}
           </Link>
         </li>
         <li className={styles.li}>
           <Link className={pathname === '/contact' ? styles.active : ''} href="/contact" locale={locale}>
-            Contact
+            {translation('contact')}
           </Link>
         </li>
       </ul>
@@ -62,7 +64,7 @@ function Navbar(props) {
 }
 
 Navbar.propTypes = {
-  locale: PropTypes.shape({}).isRequired,
+  locale: PropTypes.string.isRequired,
 };
 
 export default Navbar;

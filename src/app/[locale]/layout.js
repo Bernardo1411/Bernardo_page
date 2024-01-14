@@ -45,8 +45,8 @@ function RootLayout({ children, params: { locale } }) {
       </head>
       <body className={inter.className} suppressHydrationWarning>
         <Background>
-          <Navbar locale={locale} />
           <NextIntlClientProvider messages={messages}>
+            <Navbar locale={locale} />
             {children}
           </NextIntlClientProvider>
         </Background>
@@ -62,7 +62,7 @@ RootLayout.propTypes = {
     PropTypes.node,
   ]).isRequired,
   params: PropTypes.shape({
-    locale: PropTypes.shape({}).isRequired,
+    locale: PropTypes.string.isRequired,
   }).isRequired,
 };
 
