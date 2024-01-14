@@ -3,10 +3,10 @@
 import React from 'react';
 import Image from 'next/image';
 
-import PageContainer from '../../containers/pageContainer/pageContainer';
-import Transition from '../../containers/Transition/Transition';
-import Title from '../../components/title/title';
-import ChangeOnHover from '../../components/changeOnHover/changeOnHover';
+import PageContainer from '../../../containers/pageContainer/pageContainer';
+import Transition from '../../../containers/Transition/Transition';
+import Title from '../../../components/title/title';
+import ChangeOnHover from '../../../components/changeOnHover/changeOnHover';
 
 import styles from './about.module.css';
 

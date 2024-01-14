@@ -1,13 +1,18 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { usePathname } from 'next/navigation';
-import Link from 'next/link';
+// import { usePathname } from 'next/navigation';
+// import Link from 'next/link';
+import PropTypes from 'prop-types';
 import styles from './navbar.module.css';
 
-import CleanButton from '../../components/cleanButton/CleanButton';
+import { Link, usePathname } from '../../../../navigation'; // Next intl Link and pathname
 
-function Navbar() {
+import CleanButton from '../../../components/cleanButton/CleanButton';
+
+function Navbar(props) {
+  const { locale } = props;
+
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -32,22 +37,22 @@ function Navbar() {
       </CleanButton>
       <ul className={`${styles.ul} ${isMenuOpen ? styles.showMenu : ''}`} onMouseLeave={() => setIsMenuOpen(false)}>
         <li className={styles.li}>
-          <Link className={pathname === '/' ? styles.active : ''} href="/">
+          <Link className={pathname === '/' ? styles.active : ''} href="/" locale={locale}>
             Bernardo
           </Link>
         </li>
         <li className={styles.li}>
-          <Link className={pathname === '/about' ? styles.active : ''} href="/about">
+          <Link className={pathname === '/about' ? styles.active : ''} href="/about" locale={locale}>
             About
           </Link>
         </li>
         <li className={styles.li}>
-          <Link className={pathname === '/portfolio' ? styles.active : ''} href="/portfolio">
+          <Link className={pathname === '/portfolio' ? styles.active : ''} href="/portfolio" locale={locale}>
             Portfolio
           </Link>
         </li>
         <li className={styles.li}>
-          <Link className={pathname === '/contact' ? styles.active : ''} href="/contact">
+          <Link className={pathname === '/contact' ? styles.active : ''} href="/contact" locale={locale}>
             Contact
           </Link>
         </li>
@@ -55,5 +60,9 @@ function Navbar() {
     </div>
   );
 }
+
+Navbar.propTypes = {
+  locale: PropTypes.shape({}).isRequired,
+};
 
 export default Navbar;

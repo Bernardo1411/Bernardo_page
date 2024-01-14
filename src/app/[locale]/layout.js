@@ -2,8 +2,9 @@ import React from 'react';
 import { Inter } from 'next/font/google';
 import PropTypes from 'prop-types';
 import './globals.css';
+import { NextIntlClientProvider, useMessages } from 'next-intl';
 
-import Background from '../containers/background/background';
+import Background from '../../containers/background/background';
 import Navbar from './navbar/navbar';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -28,9 +29,11 @@ export const metadata = {
   },
 };
 
-function RootLayout({ children }) {
+function RootLayout({ children, params: { locale } }) {
+  const messages = useMessages();
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <head>
         <meta property="og:image:url" content="https://bernardodev-bernardo1411.vercel.app/images/opengraph_image.png" />
         <meta property="og:image:secure_url" content="https://bernardodev-bernardo1411.vercel.app/images/opengraph_image.png" />
@@ -42,8 +45,10 @@ function RootLayout({ children }) {
       </head>
       <body className={inter.className} suppressHydrationWarning>
         <Background>
-          <Navbar />
-          {children}
+          <Navbar locale={locale} />
+          <NextIntlClientProvider messages={messages}>
+            {children}
+          </NextIntlClientProvider>
         </Background>
       </body>
     </html>
@@ -56,6 +61,9 @@ RootLayout.propTypes = {
     PropTypes.object,
     PropTypes.node,
   ]).isRequired,
+  params: PropTypes.shape({
+    locale: PropTypes.shape({}).isRequired,
+  }).isRequired,
 };
 
 export default RootLayout;

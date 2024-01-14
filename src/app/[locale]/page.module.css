@@ -22,6 +22,7 @@
   font-weight: 400;
   display: inline;
   transition: all 0.5s linear;
+  text-align: center;
 }
 
 .personal {

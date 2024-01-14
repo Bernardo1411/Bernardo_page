@@ -2,10 +2,10 @@
 
 import React from 'react';
 
-import PageContainer from '../../containers/pageContainer/pageContainer';
-import Transition from '../../containers/Transition/Transition';
-import Title from '../../components/title/title';
-import Card from '../../components/card/card';
+import PageContainer from '../../../containers/pageContainer/pageContainer';
+import Transition from '../../../containers/Transition/Transition';
+import Title from '../../../components/title/title';
+import Card from '../../../components/card/card';
 
 import styles from './portfolio.module.css';
 

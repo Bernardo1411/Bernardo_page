@@ -5,13 +5,13 @@ import Image from 'next/image';
 import { toast } from 'react-toastify';
 import RingLoader from 'react-spinners/RingLoader';
 
-import PageContainer from '../../containers/pageContainer/pageContainer';
-import SubmitButton from '../../components/submitButton/submitButton';
-import sendEmail from '../../API/actions';
-import Transition from '../../containers/Transition/Transition';
-import Title from '../../components/title/title';
-import CleanButton from '../../components/cleanButton/CleanButton';
-import Toast from '../../components/toastfy/toastfy';
+import PageContainer from '../../../containers/pageContainer/pageContainer';
+import SubmitButton from '../../../components/submitButton/submitButton';
+import sendEmail from '../../../API/actions';
+import Transition from '../../../containers/Transition/Transition';
+import Title from '../../../components/title/title';
+import CleanButton from '../../../components/cleanButton/CleanButton';
+import Toast from '../../../components/toastfy/toastfy';
 
 import styles from './contact.module.css';
 

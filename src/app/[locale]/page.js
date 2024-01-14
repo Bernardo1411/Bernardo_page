@@ -2,13 +2,16 @@
 
 import React from 'react';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 import styles from './page.module.css';
 
-import PageContainer from '../containers/pageContainer/pageContainer';
-import Transition from '../containers/Transition/Transition';
-import Highlighted from '../components/highlighted/highlighted';
+import PageContainer from '../../containers/pageContainer/pageContainer';
+import Transition from '../../containers/Transition/Transition';
+import Highlighted from '../../components/highlighted/highlighted';
 
 function Landing() {
+  const translation = useTranslations('Landing');
+
   return (
     <Transition>
       <PageContainer>
@@ -25,14 +28,14 @@ function Landing() {
         />
         <div className={styles.divMainText}>
           <div>
-            <h1 className={styles.h1}>Welcome to my </h1>
-            <h1 className={`${styles.h1} ${styles.personal}`}>Personal</h1>
+            <h1 className={styles.h1}>{translation('title1')}</h1>
+            <h1 className={`${styles.h1} ${styles.personal}`}>{translation('title2')}</h1>
           </div>
           <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '30px' }}>
-            <h1 className={styles.h1}>Webpage!</h1>
+            <h1 className={styles.h1}>{translation('title3')}</h1>
           </div>
         </div>
-        <p style={{ marginBottom: '60px' }}>Build a consistent and reponsive front-end for your business.</p>
+        <p style={{ marginBottom: '60px' }}>{translation('description')}</p>
       </PageContainer>
     </Transition>
   );
