@@ -46,7 +46,11 @@
     outline: none;
     border: none;
     margin-bottom: 22px;
-    color: #8B8B8B;
+    color: #cdcdcd;
+}
+
+.input::placeholder {
+    color: #cdcdcd;
 }
 
 .div_image {

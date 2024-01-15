@@ -1,8 +1,8 @@
 {
     "Landing": {
-      "title1": "Welcome to my ",
-      "title2": "Personal",
-      "title3": "Webpage!",
+      "title1": "You are ",
+      "title2": "Welcome",
+      "title3": "to my webpage!",
       "description": "Build a consistent and responsive front-end for your business."
     },
     "Navbar": {
@@ -11,7 +11,7 @@
         "contact": "Contact"
     },
     "About": {
-        "aboutMeTile": "About Me",
+        "aboutMeTitle": "About Me",
         "aboutMe1": "My name is Bernardo Fonseca, and I am a skilled developer based in Natal , RN, Brazil. I specialize in crafting cutting-edge mobile and web applications using React.js and React Native. Additionally, I bring expertise in backend development through Node.js and Express.",
         "aboutMe2": "I am enthusiastic about the prospect of contributing to the the success of your project. Whether you have a clear project roadmap or are in the initial planning stages, I am ready to bring my skills to the table.",
         "degree": "Degree",
