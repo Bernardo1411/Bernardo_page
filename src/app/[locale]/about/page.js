@@ -20,7 +20,7 @@ function About() {
         <div className={styles.div_container_rows}>
           <div className={styles.div_rows}>
             <div className={styles.div_container_text}>
-              <Title style={{ marginBottom: '10px' }}>{translation('aboutMeTile')}</Title>
+              <Title style={{ marginBottom: '10px' }}>{translation('aboutMeTitle')}</Title>
               <p className={styles.p}>
                 {translation('aboutMe1')}
               </p>

@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import { useTranslations } from 'next-intl';
 
 import PageContainer from '../../../containers/pageContainer/pageContainer';
 import Transition from '../../../containers/Transition/Transition';
@@ -10,53 +11,54 @@ import Card from '../../../components/card/card';
 import styles from './portfolio.module.css';
 
 function Portfolio() {
+  const translation = useTranslations('Portfolio');
+
   return (
     <Transition>
       <PageContainer>
-        <Title style={{ marginBottom: '30px', marginTop: '20px' }}>Portfolio</Title>
+        <Title style={{ marginBottom: '30px', marginTop: '20px' }}>{translation('title')}</Title>
         <div className={styles.container}>
           <Card
-            title="My Webpage"
+            title={translation('mywebpage')}
             image="mywebpage_mobile"
             link="Bernardo_page"
             techs={['next', 'javascript', 'html5', 'css3']}
-            description="Welcome to my professional web page! Explore my portfolio, discover my skills, and get in touch."
+            description={translation('mywebpageDescription')}
           />
           <Card
-            title="EQBEA"
+            title={translation('eqbea')}
             image="eqbea"
             link="EQBEA"
             techs={['react_mini', 'node', 'mongoose', 'mongodb']}
-            description="Mobile application for animal welfare management and diagnosis prediction."
+            description={translation('eqbeaDescription')}
           />
           <Card
-            title="Flowers"
+            title={translation('flowers')}
             image="flowersdashboard"
             link="flowersdashboard"
             techs={['react_mini', 'node', 'mongoose', 'mongodb']}
-            description="This web aplication is a dashboard to flower stock control."
+            description={translation('flowersDescription')}
           />
           <Card
-            title="Nerdflix"
+            title={translation('nerdflix')}
             image="nerdflix"
             link="Nerdflix"
             techs={['react_mini', 'css3', 'html5', 'firebase']}
-            description="Nerdflix is an web app that simulates an online movie store. You can browse a movie and add to your cart."
+            description={translation('nerdflixDescription')}
           />
           <Card
-            title="Wallet"
+            title={translation('wallet')}
             image="wallet"
             link="Wallet"
             techs={['react_mini', 'css3', 'html5', 'javascript']}
-            description="One of my first projects. It is a digital wallet that calculates and converts any expense in any currency into reais."
+            description={translation('walletDescription')}
           />
           <Card
-            title="Hash Game"
+            title={translation('hashgame')}
             image="hashgame"
             link="Hash-Game"
             techs={['react_mini', 'css3', 'html5', 'javascript']}
-            description="
-            My first React project: a tic-tac-toe game where you can challenge yourself by playing against the computer. Enjoy the challenge!"
+            description={translation('hashgameDescription')}
           />
         </div>
       </PageContainer>

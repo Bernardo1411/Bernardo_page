@@ -5,13 +5,13 @@
         "title3": "Seja bem-vindo.",
         "description": "Crie um front-end consistente e responsivo para o seu negócio."
       },
-      "Navbar": {
+    "Navbar": {
         "about": "Sobre",
         "portfolio": "Portfólio",
         "contact": "Contato"
     },
     "About": {
-        "aboutMeTile": "Sobre mim",
+        "aboutMeTitle": "Sobre mim",
         "aboutMe1": "Meu nome é Bernardo Fonseca e sou um desenvolvedor de software localizado em Natal, RN, Brasil. Sou especialista na criação de aplicativos móveis e web de última geração usando React.js e React Native. Além disso, trago expertise em desenvolvimento backend através de Node.js e Express.",
         "aboutMe2": "Estou entusiasmado com a perspectiva de contribuir para o sucesso do seu projeto. Quer você tenha um projeto já em produção ou esteja nos estágios iniciais de planejamento, estou pronto para colocar minhas habilidades em prática.",
         "degree": "Graduação",
@@ -25,6 +25,30 @@
         "technologies": "Tecnologias"
     },
     "Portfolio": {
-        "title": "Portfólio"
+        "title": "Portfólio",
+        "seeMore": "Veja mais...",
+        "mywebpage": "Minha webpage",
+        "mywebpageDescription": "Bem-vindo à minha página profissional! Explore meu portfólio, descubra minhas habilidades e entre em contato.",
+        "eqbea": "EQBEA",
+        "eqbeaDescription": "Aplicativo móvel para gerenciamento de bem-estar animal e previsão de diagnóstico.",
+        "flowers": "Flowers",
+        "flowersDescription": "Esta aplicação web é um painel para controle de estoque de flores.",
+        "nerdflix": "Nerdflix",
+        "nerdflixDescription": "Nerdflix é um aplicativo web que simula uma loja de filmes online. Você pode procurar um filme e adicioná-lo ao seu carrinho.",
+        "wallet": "Wallet",
+        "walletDescription": "Um dos meus primeiros projetos. É uma carteira digital que calcula e converte qualquer gasto em qualquer moeda para reais.",
+        "hashgame": "Hash Game",
+        "hashgameDescription": "Meu primeiro projeto React: um jogo da velha onde você pode se desafiar jogando contra o computador. Aproveite o desafio!"
+    },
+    "Contact": {
+         "title": "Contato",
+         "checkMyCurriculum": "Confira meu currículo",
+         "findMyEmail": ": Você pode encontrar meu e-mail no meu currículo",
+         "sendMeMessage": "Me mande uma mensagem",
+         "emailTitle": "Título",
+         "insertMessage": "Inserir mensagem...",
+         "submit": "Enviar",
+         "emailSentSuccessfully": "E-mail enviado com sucesso",
+         "errorSendingEmail": "Erro ao enviar e-mail"
     }
   }

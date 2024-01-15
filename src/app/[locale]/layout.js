@@ -12,10 +12,10 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata = {
   metadataBase: `http://localhost:${process.env.PORT || 3000}`,
   title: 'Bernardo',
-  description: 'Wellcome to my professional website!',
+  description: 'Welcome to my professional website!',
   openGraph: {
     title: 'Bernardo',
-    description: 'Wellcome to my professional website!',
+    description: 'Welcome to my professional website!',
     url: 'https://bernardodev-bernardo1411.vercel.app/',
     siteName: 'Bernardo website',
     // images: [

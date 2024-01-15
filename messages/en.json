@@ -24,6 +24,30 @@
         "technologies": "Technologies"
     },
     "Portfolio": {
-        "title": "Portfólio"
-    }
+        "title": "Portfolio",
+        "seeMore": "See more...",
+        "mywebpage": "My webpage",
+        "mywebpageDescription": "Welcome to my professional web page! Explore my portfolio, discover my skills, and get in touch.",
+        "eqbea": "EQBEA",
+        "eqbeaDescription": "Mobile application for animal welfare management and diagnosis prediction.",
+        "flowers": "Flowers",
+        "flowersDescription": "This web application is a dashboard to flower stock control.",
+        "nerdflix": "Nerdflix",
+        "nerdflixDescription": "Nerdflix is an web app that simulates an online movie store. You can browse a movie and add to your cart.",
+        "wallet": "Wallet",
+        "walletDescription": "One of my first projects. It is a digital wallet that calculates and converts any expense in any currency into reais.",
+        "hashgame": "Hash Game",
+        "hashgameDescription": "My first React project: a tic-tac-toe game where you can challenge yourself by playing against the computer. Enjoy the challenge!"
+    },
+   "Contact": {
+        "title": "Contact",
+        "checkMyCurriculum": "Check my curriculum",
+        "findMyEmail": ": You can find my e-mail on  my curriculum",
+        "sendMeMessage": "Send me a message",
+        "emailTitle": "Title",
+        "insertMessage": "Insert message...",
+        "submit": "Submit",
+        "emailSentSuccessfully": "Email sent successfully",
+        "errorSendingEmail": "Error sending email"
+   } 
   }
