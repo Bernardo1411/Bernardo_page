@@ -82,4 +82,8 @@
     .p_send_message {
         margin-top: 40px;
     }
+
+    .div_form {
+        width: 90%;
+    }
 }

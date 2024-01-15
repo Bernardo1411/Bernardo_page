@@ -10,6 +10,7 @@ import styles from './navbar.module.css';
 import { Link, usePathname } from '../../../../navigation'; // Next intl Link and pathname
 
 import CleanButton from '../../../components/cleanButton/CleanButton';
+import I18nButton from '../../../components/i18nButton/i18nButton';
 
 function Navbar(props) {
   const { locale } = props;
@@ -59,6 +60,7 @@ function Navbar(props) {
           </Link>
         </li>
       </ul>
+      <I18nButton locale={locale} />
     </div>
   );
 }
