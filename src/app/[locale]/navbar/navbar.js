@@ -19,11 +19,11 @@ function Navbar(props) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    setIsMenuOpen((oldState) => !oldState);
   };
 
   useEffect(() => {
-    document.body.addEventListener('click', () => setIsMenuOpen(false));
+    if (isMenuOpen) document.body.addEventListener('click', () => setIsMenuOpen(false));
 
     return () => {
       document.body.removeEventListener('click', () => setIsMenuOpen(false));
