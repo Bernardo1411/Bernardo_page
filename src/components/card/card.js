@@ -3,6 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import PropTypes from 'prop-types';
+import { useTranslations } from 'next-intl';
 
 import Title from '../title/title';
 import CleanButton from '../cleanButton/CleanButton';
@@ -10,6 +11,8 @@ import CleanButton from '../cleanButton/CleanButton';
 import styles from './card.module.css';
 
 function Card(props) {
+  const translation = useTranslations('Portfolio');
+
   const {
     title, image, techs, description, link, style = {},
   } = props;
@@ -46,7 +49,7 @@ function Card(props) {
             {description}
           </p>
           <p className={styles.hyperLink}>
-            See more...
+            {translation('seeMore')}
           </p>
           <div>
             {techs && techs.length > 0 && techs.map((tech) => (

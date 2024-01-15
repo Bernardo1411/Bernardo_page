@@ -9,6 +9,7 @@
   padding-left: 50px;
   transition: all 0.5s linear;
 }
+
 .divMainText {
   display: flex;
   flex-direction: column;
@@ -22,6 +23,7 @@
   font-weight: 400;
   display: inline;
   transition: all 0.5s linear;
+  text-align: center;
 }
 
 .personal {

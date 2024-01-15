@@ -2,7 +2,7 @@
     width: 100vw;
     height: 98px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background: var(--background-navbar-color);
     position: fixed;

@@ -2,62 +2,57 @@
 
 import React from 'react';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
-import PageContainer from '../../containers/pageContainer/pageContainer';
-import Transition from '../../containers/Transition/Transition';
-import Title from '../../components/title/title';
-import ChangeOnHover from '../../components/changeOnHover/changeOnHover';
+import PageContainer from '../../../containers/pageContainer/pageContainer';
+import Transition from '../../../containers/Transition/Transition';
+import Title from '../../../components/title/title';
+import ChangeOnHover from '../../../components/changeOnHover/changeOnHover';
 
 import styles from './about.module.css';
 
 function About() {
+  const translation = useTranslations('About');
+
   return (
     <Transition>
       <PageContainer>
         <div className={styles.div_container_rows}>
           <div className={styles.div_rows}>
             <div className={styles.div_container_text}>
-              <Title style={{ marginBottom: '10px' }}>About Me</Title>
+              <Title style={{ marginBottom: '10px' }}>{translation('aboutMeTitle')}</Title>
               <p className={styles.p}>
-                My name is Bernardo Fonseca, and I am a skilled developer based in Natal
-                , RN, Brazil.
-                I specialize in crafting cutting-edge mobile and web applications using
-                React.js and React Native.
-                Additionally, I bring expertise in backend development through Node.js and Express.
+                {translation('aboutMe1')}
               </p>
 
               <p className={styles.p}>
-                I am enthusiastic about the prospect of contributing
-                to the the success of your project.
-                Whether you have a clear project roadmap or are in the initial planning stages,
-                I am ready to bring my skills to the table.
+                {translation('aboutMe2')}
               </p>
             </div>
             <div className={styles.div_container_text}>
-              <Title className={styles.p} style={{ marginBottom: '10px' }}>Degree</Title>
+              <Title className={styles.p} style={{ marginBottom: '10px' }}>{translation('degree')}</Title>
               <p className={styles.p}>
-                Graduated in chemistry Engineering at Federal University of Rio Grande do Norte
+                {translation('degree1')}
               </p>
 
               <p className={styles.p}>
-                Master Science in Oil Science & Engineering at
-                Federal University of Rio Grande do Norte
+                {translation('degree2')}
               </p>
             </div>
           </div>
           <div className={styles.div_rows}>
             <div className={styles.div_container_text}>
-              <Title style={{ marginBottom: '10px' }}>Experience</Title>
+              <Title style={{ marginBottom: '10px' }}>{translation('experience')}</Title>
               <p className={styles.p}>
-                Full-Stack developer at Centro de Inovação Edge
+                {translation('experience1')}
               </p>
 
               <p className={styles.p}>
-                Web and mobile developer at Extraconomy company
+                {translation('experience2')}
               </p>
 
               <p className={styles.p}>
-                Front-end developer at Laboratório de Automação em Petróleo (LAUT)
+                {translation('experience3')}
               </p>
             </div>
             <div className={styles.div_images}>
@@ -120,7 +115,7 @@ function About() {
           </div>
           <div className={styles.div_rows}>
             <div className={styles.div_container_text}>
-              <Title style={{ marginBottom: '10px' }}>Technologies</Title>
+              <Title style={{ marginBottom: '10px' }}>{translation('technologies')}</Title>
               <p className={`${styles.p} ${styles.p_option}`}>JavaScript</p>
               <p className={`${styles.p} ${styles.p_option}`}>HTML</p>
               <p className={`${styles.p} ${styles.p_option}`}>CSS</p>

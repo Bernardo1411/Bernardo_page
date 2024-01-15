@@ -1,0 +1,53 @@
+{
+    "Landing": {
+      "title1": "You are ",
+      "title2": "Welcome",
+      "title3": "to my webpage!",
+      "description": "Build a consistent and responsive front-end for your business."
+    },
+    "Navbar": {
+        "about": "About",
+        "portfolio": "Portfolio",
+        "contact": "Contact"
+    },
+    "About": {
+        "aboutMeTitle": "About Me",
+        "aboutMe1": "My name is Bernardo Fonseca, and I am a skilled developer based in Natal , RN, Brazil. I specialize in crafting cutting-edge mobile and web applications using React.js and React Native. Additionally, I bring expertise in backend development through Node.js and Express.",
+        "aboutMe2": "I am enthusiastic about the prospect of contributing to the the success of your project. Whether you have a clear project roadmap or are in the initial planning stages, I am ready to bring my skills to the table.",
+        "degree": "Degree",
+        "degree1": "Graduated in chemistry Engineering at Federal University of Rio Grande do Norte",
+        "degree2": "Master Science in Oil Science & Engineering at Federal University of Rio Grande do Norte",
+        "experience": "Experience",
+        "experience1": "Full-Stack developer at Centro de Inovação Edge",
+        "experience2": "Web and mobile developer at Extraconomy company",
+        "experience3": "Front-end developer at Laboratório de Automação em Petróleo (LAUT)",
+        "technologies": "Technologies"
+    },
+    "Portfolio": {
+        "title": "Portfolio",
+        "seeMore": "See more...",
+        "mywebpage": "My webpage",
+        "mywebpageDescription": "Welcome to my professional web page! Explore my portfolio, discover my skills, and get in touch.",
+        "eqbea": "EQBEA",
+        "eqbeaDescription": "Mobile application for animal welfare management and diagnosis prediction.",
+        "flowers": "Flowers",
+        "flowersDescription": "This web application is a dashboard to flower stock control.",
+        "nerdflix": "Nerdflix",
+        "nerdflixDescription": "Nerdflix is an web app that simulates an online movie store. You can browse a movie and add to your cart.",
+        "wallet": "Wallet",
+        "walletDescription": "One of my first projects. It is a digital wallet that calculates and converts any expense in any currency into reais.",
+        "hashgame": "Hash Game",
+        "hashgameDescription": "My first React project: a tic-tac-toe game where you can challenge yourself by playing against the computer. Enjoy the challenge!"
+    },
+   "Contact": {
+        "title": "Contact",
+        "checkMyCurriculum": "Check my curriculum",
+        "findMyEmail": ": You can find my e-mail on  my curriculum",
+        "sendMeMessage": "Send me a message",
+        "emailTitle": "Title",
+        "insertMessage": "Insert message...",
+        "submit": "Submit",
+        "emailSentSuccessfully": "Email sent successfully",
+        "errorSendingEmail": "Error sending email"
+   } 
+  }
